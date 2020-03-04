@@ -17,15 +17,18 @@ export default class Dropdown extends Component {
     return (
       <div>
         <ul>
-          {this.props.data.category.map(function(category, i){
-             return (
-               <button key={i} onClick={this.toggleBox}>
+          {this.props.data.category.map(category =>
+               <button key={category.id} onClick={this.toggleBox} className={this.state.isExpanded ? 'expanded': 'contracted'}>
                  <li>
-                  {[ category.name ]}
+                  {category.name}
+                  <ul>
+                    {category.subcategory.map(subcategory =>
+                      <li>{subcategory.productType}</li>
+                    )}
+                  </ul>
                 </li>
               </button>
-            );
-           })}
+           )}
               {/*<div className={this.state.isExpanded ? 'front': 'back'}  </div>*/}
         </ul>
       </div>
