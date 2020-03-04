@@ -1,0 +1,73 @@
+{
+  "category": [
+    {
+      "name": "daily",
+      "subcategory": [
+        {
+          "productType": "",
+          "stock": 25
+        }
+      ]
+    },
+    {
+      "name": "sports",
+      "subcategory": [
+        {
+          "productType": "sport socks",
+          "stock": 25
+        },
+        {
+          "productType": "running socks",
+          "stock": 25
+        },
+        {
+          "productType": "hockey socks",
+          "stock": 25
+        },
+        {
+          "productType": "ski socks",
+          "stock": 25
+        },
+        {
+          "productType": "flight socks",
+          "stock": 25
+        },
+        {
+          "productType": "hiking socks",
+          "stock": 25
+        },
+        {
+          "productType": "work socks",
+          "stock": 25
+        }
+      ]
+    },
+    {
+      "name": "travel",
+      "subcategory": [
+        {
+          "productType": "",
+          "stock": 25
+        }
+      ]
+    },
+    {
+      "name": "medical",
+      "subcategory": [
+        {
+          "productType": "",
+          "stock": 25
+        }
+      ]
+    },
+    {
+      "name": "more",
+      "subcategory": [
+        {
+          "productType": "",
+          "stock": 25
+        }
+      ]
+    }
+  ]
+}
