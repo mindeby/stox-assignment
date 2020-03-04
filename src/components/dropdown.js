@@ -1,4 +1,6 @@
 import React, { Component } from 'react';
+import Submenu from './submenu';
+
 
 
 export default class Dropdown extends Component {
@@ -9,29 +11,40 @@ export default class Dropdown extends Component {
 
   toggleBox = () => {
   this.setState(prevState => ({ isExpanded: !prevState.isExpanded }));
-  console.log(this.state.isExpanded)
   };
 
 
   render(props) {
     return (
-      <div>
-        <ul>
-          {this.props.data.category.map(category =>
-               <button key={category.id} onClick={this.toggleBox} className={this.state.isExpanded ? 'expanded': 'contracted'}>
-                 <li>
-                  {category.name}
-                  <ul>
-                    {category.subcategory.map(subcategory =>
-                      <li>{subcategory.productType}</li>
-                    )}
-                  </ul>
-                </li>
-              </button>
+       <button onClick={this.toggleBox}>
+         <li>
+           {this.props.name}
+           { (this.state.isExpanded ?
+             <ul>
+              <Submenu data={this.props.subcategories} />
+             </ul>
+             :
+             null
            )}
-              {/*<div className={this.state.isExpanded ? 'front': 'back'}  </div>*/}
-        </ul>
-      </div>
+         </li>
+      </button>
     );
   }
 }
+
+{/*
+  <ul>
+    {this.props.data.category.map(category =>
+         <button key={category.id} onClick={this.toggleBox}>
+           <li>
+            {category.name}
+            <ul>
+              {category.subcategory.map(subcategory =>
+                <li className={this.state.isExpanded ? 'expanded': 'hidden'}> {subcategory.productType}</li>
+              )}
+            </ul>
+          </li>
+        </button>
+     )}
+  </ul>
+*/}
