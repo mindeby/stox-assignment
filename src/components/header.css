@@ -29,10 +29,9 @@ nav ul li {
 	height: calc(20px + 16px + 16px); /* To accommodate the padding whilst keeping the icon 20x20 */
 }
 
-.icon-hamburger button:hover,
-.icon-cart button:hover {
-	cursor: pointer;
-	background: rgba(0,0,0,0.1);
+.icon-hamburger button:focus,
+.icon-cart button:focus {
+	outline: none;
 }
 
 .hamburger-item {

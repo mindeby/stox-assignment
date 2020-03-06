@@ -11,7 +11,6 @@ export default class Dropdown extends Component {
   this.setState(prevState => ({ isExpanded: !prevState.isExpanded }));
   };
 
-
   render(props) {
     return (
       <span>

@@ -52,6 +52,11 @@
 	margin-bottom: 20px;
 }
 
+.sub-menu-items a {
+	text-decoration: none;
+	color: inherit;
+}
+
 .sub-menu-items .product-count {
 	opacity: .5;
 	font-size: 10px;

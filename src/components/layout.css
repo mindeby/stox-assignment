@@ -7,6 +7,7 @@ body {
   margin: 0;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  min-height: 100vh;
 }
 article,
 aside,
@@ -622,14 +623,16 @@ pre tt:after {
 }
 
 footer {
-    font-size: 12px;
-    padding: 30px;
-    letter-spacing: 1px;
+  margin-top: auto;
+  font-size: 12px;
+  padding: 30px;
+  letter-spacing: 1px;
 }
 
-footer span{
+footer span {
   display: block;
   margin-bottom: 25px;
+  line-height: 1.8;
 }
 
 footer ul {
@@ -645,20 +648,29 @@ footer ul li {
 }
 
 .language {
+  display: flex;
+  align-items: center;
   text-transform: uppercase;
 }
 
 .language:after {
 	content: "";
-	position: absolute;
+	position: relative;
+  margin: 0 0 0 5px;
+  top: -1px;
   display: block;
   width: 6px;
   height: 6px;
   transform: rotate(45deg);
-  left: 152px;
-  bottom:37px;
   border-style: solid;
   border-color: black;
   border-width: 0px 2px 2px 0px;
 	transition: transform .3s;
+}
+
+.page-content {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  min-height: 100vh;
 }
