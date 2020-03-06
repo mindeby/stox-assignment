@@ -1,0 +1,43 @@
+.carousel {
+	display: flex;
+	position: relative;
+	height: 200px;
+	padding: 10px;
+	overflow-x: scroll;
+	margin-left: 0;
+	margin-bottom: 0;
+}
+
+.carousel li {
+	position: relative;
+	list-style: none;
+	padding: 0;
+	margin: 0;
+	margin-left: 0;
+	margin-right: 10px;
+	height: 100%;
+}
+
+.carousel div {
+	position: relative;
+	height: 100%;
+}
+
+.carousel img {
+	position: relative;
+	height: auto;
+	max-height: 100%;
+	width: auto;
+	max-width: 500px;
+	margin: 0;
+}
+
+.carousel .category-title {
+	position: absolute;
+	bottom: 5%;
+	left: 10%;
+	color: white;
+	text-transform: capitalize;
+	font-size: 13px;
+	font-weight: 500;
+}

@@ -6,7 +6,7 @@ import Submenu from './submenu';
 export default class Dropdown extends Component {
 
   state = {
-    isExpanded:true
+    isExpanded:false
   };
 
   toggleBox = () => {
@@ -20,7 +20,7 @@ export default class Dropdown extends Component {
          <li>
            {this.props.name}
            { (this.state.isExpanded ?
-             <ul>
+             <ul className="sub-menu expanded">
               <Submenu data={this.props.subcategories} />
              </ul>
              :
@@ -31,20 +31,3 @@ export default class Dropdown extends Component {
     );
   }
 }
-
-{/*
-  <ul>
-    {this.props.data.category.map(category =>
-         <button key={category.id} onClick={this.toggleBox}>
-           <li>
-            {category.name}
-            <ul>
-              {category.subcategory.map(subcategory =>
-                <li className={this.state.isExpanded ? 'expanded': 'hidden'}> {subcategory.productType}</li>
-              )}
-            </ul>
-          </li>
-        </button>
-     )}
-  </ul>
-*/}

@@ -1,0 +1,58 @@
+nav {
+	width: 100vw;
+	padding: 8px;
+}
+
+nav ul {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	list-style: none;
+	padding: 0;
+	margin: 0;
+	margin-left: 0;
+	margin-right: 0;
+}
+
+nav ul li {
+	margin-bottom: 0;
+}
+
+.icon-hamburger button,
+.icon-cart button {
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+	background: none;
+	border: none;
+	padding: 16px;
+	height: calc(20px + 16px + 16px); /* To accommodate the padding whilst keeping the icon 20x20 */
+}
+
+.icon-hamburger button:hover,
+.icon-cart button:hover {
+	cursor: pointer;
+	background: rgba(0,0,0,0.1);
+}
+
+.hamburger-item {
+	display: block;
+	width: 20px;
+	height: 2px;
+	background: black;
+}
+
+.logo-stox {
+	flex-grow: 2;
+	margin-left: 8px;
+}
+
+.logo-stox a,
+.icon-cart a {
+	display: flex;
+	align-items: center;
+}
+
+.header-menu {
+	border-top: 1px solid #dfdfdf;
+}
