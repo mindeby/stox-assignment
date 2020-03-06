@@ -8,6 +8,10 @@
 
 /* STYLES FOR MAIN SECTION CATEGORY */
 .category-title {
+	display: flex;
+	flex-direction: row-reverse;
+	justify-content: space-between;
+	align-items: center;
 	font-size: 16px;
 	font-weight: 700;
 	letter-spacing: 1px;
@@ -18,15 +22,13 @@
 
 .category-title:before {
 	content: "";
-	position: absolute;
   display: block;
   width: 6px;
   height: 6px;
   transform: rotate(45deg);
-  right: 50px;
   margin-top: 6px;
   border-style: solid;
-  border-color: black;
+  border-color: #7E7F80;
   border-width: 0px 2px 2px 0px;
 	transition: transform .3s;
 }
