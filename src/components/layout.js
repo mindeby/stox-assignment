@@ -30,9 +30,9 @@ const Layout = ({ children }) => {
         <main>{children}</main>
         <footer>
           <ul>
-            <li><a>Reviews</a></li>
-            <li><a>Contact</a></li>
-            <li><a>Account</a></li>
+            <li><a href="#">Reviews</a></li>
+            <li><a href="#">Contact</a></li>
+            <li><a href="#">Account</a></li>
           </ul>
           <span className="language"><b>Language:</b> EN &euro;</span>
           <span><b>Call</b> 020-2050738<br/>Mon - Thu, 9:00 - 19:00<br/>Fri, 9:00 - 18:00</span>

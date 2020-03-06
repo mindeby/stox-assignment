@@ -1,4 +1,3 @@
-import { Link } from "gatsby"
 import React, { Component } from 'react';
 import "./header.css"
 import HeaderMenu from "./header-menu"
