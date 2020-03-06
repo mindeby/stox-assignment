@@ -16,18 +16,16 @@ export default class Dropdown extends Component {
 
   render(props) {
     return (
-       <button onClick={this.toggleBox}>
-         <li>
-           {this.props.name}
-           { (this.state.isExpanded ?
-             <ul className="sub-menu expanded">
-              <Submenu data={this.props.subcategories} />
-             </ul>
-             :
-             null
-           )}
-         </li>
-      </button>
+      <span>
+        <li onClick={this.toggleBox} className="category-title">
+          {this.props.name}
+        </li>
+          { (this.state.isExpanded ?
+            <Submenu data={this.props.subcategories} />
+            :
+            null
+          )}
+      </span>
     );
   }
 }

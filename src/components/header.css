@@ -37,9 +37,24 @@ nav ul li {
 
 .hamburger-item {
 	display: block;
+	position: relative;
 	width: 20px;
 	height: 2px;
 	background: black;
+	transform: none;
+	transition: transform .3s;
+}
+
+.icon-hamburger.close .hamburger-item:nth-child(1) {
+	transform: rotateZ(45deg) scaleX(1.2) translate(5px, 5px);
+}
+
+.icon-hamburger.close .hamburger-item:nth-child(2) {
+	transform: rotateZ(45deg) scaleX(1.2) translate(-1px, -1px);
+}
+
+.icon-hamburger.close .hamburger-item:nth-child(3) {
+	transform: rotateZ(-45deg) scaleX(1.2) translate(6px, -7px);
 }
 
 .logo-stox {
