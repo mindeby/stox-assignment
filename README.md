@@ -16,4 +16,4 @@ A quick assignment to code a mobile-first menu, with expanding/collapsing submen
 
 ## TODOS
 
-[ ] - Ask about that dynamic cart icon, with number of items (is it in scope?)
+- [ ] Ask about that dynamic cart icon, with number of items (is it in scope?)
