@@ -5,7 +5,11 @@
       "name": "daily",
       "subcategory": [
         {
-          "productType": "example 1",
+          "productType": "daily socks women",
+          "items": 25
+        },
+        {
+          "productType": "daily socks men",
           "items": 25
         }
       ]
@@ -49,7 +53,11 @@
       "name": "travel",
       "subcategory": [
         {
-          "productType": "example 2",
+          "productType": "travel socks women",
+          "items": 25
+        },
+        {
+          "productType": "travel socks men",
           "items": 25
         }
       ]
@@ -59,7 +67,11 @@
       "name": "medical",
       "subcategory": [
         {
-          "productType": "example 3",
+          "productType": "medical thigh high stocking",
+          "items": 25
+        },
+        {
+          "productType": "medical socks unisex",
           "items": 25
         }
       ]
@@ -69,7 +81,11 @@
       "name": "more.",
       "subcategory": [
         {
-          "productType": "example 3",
+          "productType": "flight socks",
+          "items": 25
+        },
+        {
+          "productType": "recovery socks",
           "items": 25
         }
       ]

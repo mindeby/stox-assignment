@@ -1,8 +1,6 @@
 import React, { Component } from 'react';
 import Submenu from './submenu';
 
-
-
 export default class Dropdown extends Component {
 
   state = {
@@ -17,7 +15,7 @@ export default class Dropdown extends Component {
   render(props) {
     return (
       <span>
-        <li onClick={this.toggleBox} className="category-title">
+        <li onClick={this.toggleBox} className={this.state.isExpanded ? 'category-title expanded': 'category-title collapsed'}>
           {this.props.name}
         </li>
           { (this.state.isExpanded ?

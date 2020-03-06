@@ -621,6 +621,12 @@ pre tt:after {
   }
 }
 
+footer {
+    font-size: 12px;
+    padding: 30px;
+    letter-spacing: 1px;
+}
+
 footer span{
   display: block;
   margin-bottom: 25px;
@@ -636,4 +642,23 @@ footer ul {
 footer ul li {
   display: inline-block;
   margin-right: 10px;
+}
+
+.language {
+  text-transform: uppercase;
+}
+
+.language:after {
+	content: "";
+	position: absolute;
+  display: block;
+  width: 6px;
+  height: 6px;
+  transform: rotate(45deg);
+  left: 152px;
+  bottom:37px;
+  border-style: solid;
+  border-color: black;
+  border-width: 0px 2px 2px 0px;
+	transition: transform .3s;
 }

@@ -20,7 +20,7 @@ export default class Header extends Component {
       <header>
           <nav>
             <ul>
-              <li className="icon-hamburger">
+              <li className={this.state.isMenuExpanded ? 'icon-hamburger close': 'icon-hamburger'}>
                 <button type="button" aria-label="open menu" onClick={this.toggleMenu}>
                   <div className="hamburger-item hamburger-item-bun"></div>
                   <div className="hamburger-item hamburger-item-paddy"></div>

@@ -10,7 +10,7 @@ const HeaderMenu = (props) => {
   return (
     <div className="header-menu">
       <Carousel/>
-      <ul className="sub-menu collapsed">
+      <ul className="sub-menu">
         {categories}
       </ul>
     </div>

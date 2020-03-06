@@ -28,10 +28,10 @@
   border-style: solid;
   border-color: black;
   border-width: 0px 2px 2px 0px;
-	transition: transform 2s;
+	transition: transform .3s;
 }
 
-.sub-menu.expanded .category-title:before {
+.category-title.expanded:before {
 	transform: rotate(225deg);
 }
 
